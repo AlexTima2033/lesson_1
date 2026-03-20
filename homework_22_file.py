@@ -1,9 +1,10 @@
 mass_H = 1.0 #Задача 1
 mass_O = 16.0
+
 molecular_mass = 2 * mass_H + mass_O
 
 with open('chemist_2.txt', 'w', encoding='utf-8') as file:
-    input_data = f"Вводные данные для H2O:\nmass H - {mass_H}\nmass O - {mass_O}\nmolecular mass - {molecular_mass}\n"
+    input_data = f"Вводные данные для H2O:\nmass H - {mass_H}\nmass O - {mass_O}\n"
     file.write(input_data)
 with open('chemist_2.txt', 'a', encoding='utf-8') as file_result:
     result = f"Молекулярная масса H2O: {molecular_mass} г/моль\n\n"
@@ -11,6 +12,7 @@ with open('chemist_2.txt', 'a', encoding='utf-8') as file_result:
 
 mass_C = 12.0 #Задача 2
 mass_O = 16.0
+
 molecular_mass = mass_C + 2 * mass_O
 result_mass = molecular_mass
 n_CO2 = result_mass / molecular_mass
@@ -25,6 +27,7 @@ with open('chemist_2.txt', 'a', encoding='utf-8') as file_result_2:
 mass_H2O = 18.0 #г/моль #Задача 3
 mass_H2 = 2.0 #г/моль
 mass_H2_sample = 10.0
+
 n_H2 = mass_H2_sample / mass_H2
 n_H2O = n_H2
 mass_H2O_produced = n_H2O * mass_H2
@@ -40,6 +43,7 @@ with open('chemist_2.txt', 'a', encoding='utf-8') as file_result_3:
 mass_C = 12.0 #Задача 4
 mass_O = 32.0
 mass_sample = 5.0
+
 molec_C = mass_sample / mass_C
 mass_O2 = molec_C
 mass_O2_result = mass_O2 * mass_O
@@ -54,6 +58,7 @@ with open('chemist_2.txt', 'a', encoding='utf-8') as file_result_4:
 mass_h2 = 3.0 #Задача 5
 molar_mass_h2 = 2.0
 molar_mass_nh3 = 17.0
+
 moles_h2 = mass_h2 / molar_mass_h2
 moles_nh3 = moles_h2 * (2 / 3)
 mass_nh3 = moles_nh3 * molar_mass_nh3
@@ -70,6 +75,7 @@ with open('chemist_2.txt', 'a', encoding='utf-8') as file_result_5:
 mass_zn = 10.0 #Задача 6
 molar_mass_zn = 65.38
 vm = 22.4
+
 moles_zn = mass_zn / molar_mass_zn
 moles_h2 = moles_zn
 v_h2 = moles_h2 * vm
